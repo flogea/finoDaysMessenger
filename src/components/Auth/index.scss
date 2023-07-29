@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Ubuntu', sans-serif;
+
+  h1 {
+    font-size: 44px;
+    font-weight: 700;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px plum;
+    color: transparent;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    align-items: flex-end;
+
+    .text-field {
+      margin-bottom: 1rem;
+    }
+    /* стили для label */
+    .text-field__label {
+      display: block;
+      margin-bottom: 0.25rem;
+      color: white;
+    }
+    /* стили для input */
+    .text-field__input {
+      display: block;
+      width: 100%;
+      height: calc(2.25rem + 2px);
+      padding: 0.375rem 0.75rem;
+      font-family: inherit;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #212529;
+      background-color: #33393f;
+      background-clip: padding-box;
+      border: none;
+      border-radius: 0.25rem;
+      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+      &::placeholder {
+        color: rgba(255, 255, 255, 0.3);
+      }
+    }
+
+    .enterBtn {
+      width: 100px;
+      height: 40px;
+      background: transparent;
+      border: 2px solid plum;
+      border-radius: 7px;
+      cursor: pointer;
+      font-size: 20px;
+      color: plum;
+      transition: all 0.3s;
+
+      &:hover {
+        transform: scale(1.05);
+        background: plum;
+        color: white;
+      }
+    }
+  }
+}

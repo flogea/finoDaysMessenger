@@ -1,24 +1,19 @@
-import logo from './logo.svg';
+import React from 'react';
+import { Auth, Messenger } from './components';
+import { Context } from './Context';
 import './App.css';
 
 function App() {
+  const [login, setLogin] = React.useState('');
+  const [isAuth, setIsAuth] = React.useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Context.Provider value={{ login, setLogin, isAuth, setIsAuth }}>
+        {!isAuth && <Auth />}
+        {isAuth && <Messenger />}
+      </Context.Provider>
+    </>
   );
 }
 
