@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.80752f11.css",
-    "main.js": "/static/js/main.ec990aaf.js",
-    "index.html": "/index.html",
-    "main.80752f11.css.map": "/static/css/main.80752f11.css.map",
-    "main.ec990aaf.js.map": "/static/js/main.ec990aaf.js.map"
+    "main.css": "/finoDaysMessenger/static/css/main.80752f11.css",
+    "main.js": "/finoDaysMessenger/static/js/main.ec990aaf.js",
+    "index.html": "/finoDaysMessenger/index.html",
+    "main.80752f11.css.map": "/finoDaysMessenger/static/css/main.80752f11.css.map",
+    "main.ec990aaf.js.map": "/finoDaysMessenger/static/js/main.ec990aaf.js.map"
   },
   "entrypoints": [
     "static/css/main.80752f11.css",
